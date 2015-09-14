@@ -11,9 +11,44 @@
         <title>Rectangle Calculator</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     </head>
     <body>
+        
+        
+        <div class = "navbar navbar-inverse navbar-static-top">
+            <div class = "container">
+                
+                <a href ="#" class ="navbar-brand">Bootstrap + EL and JSTL</a>
+                
+                <button class = "navbar-toggle"  data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>   
+                </button>
+                
+                <div class = "collapse navbar-collapse navHeaderCollapse">
+                    
+                    <ul class ="nav navbar-nav navbar-right">
+                        <li><a href="CalculatorLabOneIndex.html">Lab One</a></li>
+                        <li><a href="CalculatorLabTwoIndex.jsp">Lab Two</a></li>
+                        <li><a href="CalculatorLabThreeIndex.jsp">Lab Three</a></li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <div>
             <h2>Rectangle Calculator</h2>
             <p>Please enter the length of the rectangle:</p>
@@ -32,7 +67,7 @@
                {
                    if(request.getAttribute("RectangleArea").toString() != null)
                    {%>
-                       <c:out>${RectangleArea}</c:out>
+                       <c:out>The rectangle is: ${RectangleArea} square units</c:out>
                     <%   
                    }
                }
@@ -44,5 +79,9 @@
 
             
         </div>
+            
+            
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </body>
 </html>
